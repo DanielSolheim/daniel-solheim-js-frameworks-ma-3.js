@@ -2,7 +2,7 @@ body{
   margin: 0;
   padding: 0;
   margin-top: 0;
-  background-color: #add8e6;
+  background-color: #e8f4f8 ;
 
 }
 
@@ -48,7 +48,7 @@ header {
 
 .nav-item:hover{
    color: white;
-   background-color: green;
+   background-color: gray;
 
 }
 
@@ -100,7 +100,7 @@ header {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 100px 1fr 100px;
+  grid-template-rows: 100px 50px 50px 50px 100px;
   border-bottom: 1px solid black;
 }
 
@@ -112,14 +112,13 @@ header {
 
 }
 
-.LoginForm form{
-  grid-column: 2/3;
-  grid-row: 2/3;
-  margin: auto;
-}
+
 
 
 .form {
+  grid-column: 2/4;
+  grid-row: 2/3;
+  margin: auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -130,9 +129,10 @@ header {
 
 
  .form-submit{
-  color: red;
-  grid-row: 3/4;
+
   height: 70px;
+  width: 50%;
+  font-size: 20px;
 }
 
 
@@ -146,23 +146,11 @@ box-shadow: 1px 3px 3px black;
 }
 
 
-.form-username {
-  grid-row: 1/2;
-
-}
-
-
-.form-password{
-  grid-row: 2/3;
-}
-
-.form-item{
+.form-item {
   display: grid;
-  grid-auto-rows: 40px 40px;
+  grid-template-columns: 1fr 1fr;
 }
 
 .form-item p{
-   grid-row: 1/2;
-  
   color: red;
 }

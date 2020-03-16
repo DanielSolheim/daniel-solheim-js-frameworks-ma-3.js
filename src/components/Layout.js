@@ -2,6 +2,7 @@ import React from 'react';
 
 //local imports
 import HomeContent from "./HomeContent";
+
 import LoginForm from "./LoginForm";
 import NewsList from "./NewsList";
 import Home from "./Home";
@@ -20,11 +21,10 @@ export default function Layout(){
   <Router className="Layout">
       <header>
          <div className="header-brand">
-         <NavLink  to="/" exact className="header-brand-text">
-             <h1 > Ma 3 </h1>
-         </NavLink>
-        </div>
-
+            <NavLink  to="/" exact className="header-brand-text">
+                <h1 > Ma 3 </h1>
+            </NavLink>
+         </div>
              <div className="main-navigation">
                 <NavLink to="/" exact className="nav-item">
                        Home
@@ -43,8 +43,6 @@ export default function Layout(){
          <Route path="/news" component={NewsList} />
          <Route path="/" component={LoginForm} />
       </Switch>
-
   </Router>
-
   );
 }

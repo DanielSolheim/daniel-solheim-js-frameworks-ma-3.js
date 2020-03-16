@@ -11,7 +11,6 @@ const schema = yup.object().shape({
          .string()
          .min(4)
          .required("Password is required")
-
 });
 
 
@@ -25,38 +24,23 @@ export default function LoginForm(props){
       console.log("data", data);
     }
 
-  function moveError(){
-
-    return (
-      <p>{errors.password.message} </p>
-    )
-
-  }
-
   return (
     <div  className="LoginForm">
        <Heading title="This is Login" />
        <form className="form" onSubmit={handleSubmit(onSubmit)}>
-          <div className="form-item form-username">
 
+          <div className="form-item form-username">
              <input name="userName"  placeholder="Username ...." ref={register({required: true})} />
              {errors.userName && <p>{errors.userName.message}</p>}
-
            </div>
 
            <div className="form-item form-password">
-
              <input name="password" placeholder="Password ...." ref={register({required: true, minLength: 4})} />
-          
-             {errors.password && moveError()}
-
-
-
-
+             {errors.password && <p>{errors.password.message}</p>}
            </div>
+
            <input className="form-submit" type="submit" />
        </form>
     </div>
-
   );
 }
