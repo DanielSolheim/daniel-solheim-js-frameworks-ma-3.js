@@ -1,38 +1,168 @@
-.App {
+body{
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+  background-color: #add8e6;
+
+}
+
+
+header {
+  background-color: #faffd1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 3px solid black;
+}
+
+.header-brand {
+  margin-left: 30px;
+
+}
+
+.header-brand-text{
+  text-decoration: none;
+  color: black;
+}
+
+.main-navigation{
+  displaY: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.test {
+  width: 100%;
+}
+
+.nav-item{
+  text-decoration: none;
+  font-size: 20px;
+  background-color: yellow;
+  width: 100%;
+  margin: auto;
+  line-height: 100px;
   text-align: center;
+  color: black;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-item:hover{
+   color: white;
+   background-color: green;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Home{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  border-bottom: 1px solid black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.Home h1 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin: auto;
+
 }
 
-.App-link {
-  color: #61dafb;
+.Home p{
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.NewsList{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  border-bottom: 1px solid black;
+}
+
+
+.NewsList h1 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin: auto;
+
+}
+
+.NewsList ul{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin: auto;
+}
+
+.LoginForm{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 1fr 100px;
+  border-bottom: 1px solid black;
+}
+
+
+.LoginForm h1 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin: auto;
+
+}
+
+.LoginForm form{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin: auto;
+}
+
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+
+ .form-submit{
+  color: red;
+  grid-row: 3/4;
+  height: 70px;
+}
+
+
+.form-item input{
+width: 99%;
+height: 40px;
+border-radius: 10px;
+border: none;
+box-shadow: 1px 3px 3px black;
+
+}
+
+
+.form-username {
+  grid-row: 1/2;
+
+}
+
+
+.form-password{
+  grid-row: 2/3;
+}
+
+.form-item{
+  display: grid;
+  grid-auto-rows: 40px 40px;
+}
+
+.form-item p{
+   grid-row: 1/2;
+  
+  color: red;
 }
